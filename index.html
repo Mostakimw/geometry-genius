@@ -27,36 +27,43 @@
     </header>
 
     <main>
-        <section class="mt-10 px-10">
+        <section class="md:flex gap-6 mt-10 px-10">
             <!-- Geometry section  -->
-            <div class="grid grid-cols-3 gap-4 w-[70%]">
+
+            <div class="grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]">
                 <!-- ! triangle  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/triangle.png" class="h-40 w-60" alt="triangle" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Triangle</h2>
+                        <h2 id="triangle-title" class="font-bold text-2xl">Triangle</h2>
                         <p>Area (A) = 0.5 &#215; b &#215; h</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="b">
+                        <input id="triangle-base" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="b">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="h">
+                        <input id="triangle-height" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="h">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="triangle-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! rectangle  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/rectangle.png" class="h-40 w-60" alt="Parallelogram" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Rectangle</h2>
+                        <h2 id="rectangle-title" class="font-bold text-2xl">Rectangle</h2>
                         <p>Area (A) = w &#215; l</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="w">
+                        <input id="rectangle-width" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text"
+                            placeholder="w">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="l">
+                        <input id="rectangle-length" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text"
+                            placeholder="l">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="rectangle-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Parallelogram  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
@@ -100,6 +107,7 @@
                     </div>
                     <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
+                <!-- ! ellipse  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/ellipse.png" class="h-40 w-60" alt="Ellipse" /></figure>
                     <div class="card-body text-center">
@@ -114,13 +122,27 @@
                     <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
             </div>
-            <!-- area calculation section  -->
-            <div></div>
+
+            <!-- ! area calculation section  -->
+            <div class="w-[30%]">
+                <div class="bg-base-100 border border-lg px-10 py-8 h-[50%] rounded-lg">
+                    <h2 class="text-3xl underline font-semibold text-center">Area Calculation</h2>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                            <tbody id="show-data">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
 
     <!-- ! Javascript linked  -->
+    <script src="./javascript/app.js"></script>
 </body>
 
 </html>
