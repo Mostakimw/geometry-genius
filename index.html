@@ -15,16 +15,39 @@
 <body>
     <header>
         <!-- navbar -->
-        <div class="navbar w-[80%] bg-cyan-50 mx-auto mt-8 rounded-lg py-4 px-6">
+        <div class="navbar w-[95%] bg-cyan-50 mx-auto mt-8 rounded-lg py-4 px-6">
             <div class="navbar-start">
                 <a class="font-bold text-4xl">Interactive<span class="font-medium text-slate-600	"><br>Geometry
                         Genius</span></a>
             </div>
             <div class="navbar-end">
-                <a class="btn btn-info px-8 font-4xl font-semibold text-white">Blog</a>
+                <a class="btn btn-info px-8 font-semibold text-white">Blog</a>
             </div>
         </div>
     </header>
+
+    <main>
+        <section class="mt-10 px-10">
+            <!-- Geometry section  -->
+            <div class="grid grid-cols-4">
+                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                    <figure><img src="./images/triangle.png" class="h-40 w-60" alt="triangle" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-bold text-2xl">Triangle</h2>
+                        <p>Area (A) = 0.5 &#215; b &#215; h</p>
+                    </div>
+                    <div class="text-center mb-8">
+                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="b">
+                        <span class="px-2">cm</span>
+                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="text" placeholder="h">
+                    </div>
+                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                </div>
+            </div>
+            <!-- area calculation section  -->
+            <div></div>
+        </section>
+    </main>
 
 
     <!-- ! Javascript linked  -->
