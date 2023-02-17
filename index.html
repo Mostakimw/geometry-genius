@@ -69,57 +69,69 @@
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/parallelogram.png" class="h-40 w-60" alt="Parallelogram" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Parallelogram</h2>
+                        <h2 id="parallelogram-title" class="font-bold text-2xl">Parallelogram</h2>
                         <p>Area (A) = b &#215; h</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="b">
+                        <input id="parallelogram-base" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black"
+                            type="number" placeholder="b">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="h">
+                        <input id="parallelogram-height" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black"
+                            type="number" placeholder="h">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="parallelogram-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Rhombus  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/rhombus.png" class="h-40 w-60" alt="Rhombus" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Rhombus</h2>
+                        <h2 id="rhombus-title" class="font-bold text-2xl">Rhombus</h2>
                         <p>Area (A) = 0.5 &#215; b &#215; h</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="b">
+                        <input id="rhombus-base" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="b">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="h">
+                        <input id="rhombus-height" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="h">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="rhombus-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Pentagon -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/pentagon.png" class="h-40 w-60" alt="Pentagon" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Pentagon</h2>
-                        <p>Area (A) = p &#215; b</p>
+                        <h2 id="pentagon-title" class="font-bold text-2xl">Pentagon</h2>
+                        <p>Area (A) = 0.5 &#215; p &#215; b</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="p">
+                        <input id="pentagon-perimeter" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black"
+                            type="number" placeholder="p">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="b">
+                        <input id="pentagon-apothem " class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black"
+                            type="number" placeholder="b">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="pentagon-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! ellipse  -->
                 <div class="card w-full bg-base-100 border border-lg px-10 py-8">
                     <figure><img src="./images/ellipse.png" class="h-40 w-60" alt="Ellipse" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="font-bold text-2xl">Ellipse</h2>
+                        <h2 id="ellipse-title" class="font-bold text-2xl">Ellipse</h2>
                         <p>Area (A) = &Pi; &#215; a &#215; b</p>
                     </div>
                     <div class="text-center mb-8">
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="a">
+                        <input id="ellipse-x-axis" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="a">
                         <span class="px-2">cm</span>
-                        <input class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number" placeholder="b">
+                        <input id="ellipse-y-axis" class="w-20 bg-[#F1F1F1] px-2 py-2 rounded text-black" type="number"
+                            placeholder="b">
                     </div>
-                    <button class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
+                    <button id="ellipse-btn"
+                        class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
             </div>
 
@@ -142,6 +154,7 @@
 
 
     <!-- ! Javascript linked  -->
+    <script src="./javascript/common.js"></script>
     <script src="./javascript/app.js"></script>
 </body>
 
