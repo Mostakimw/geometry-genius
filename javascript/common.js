@@ -17,7 +17,7 @@ function calculationDisplay(name, area) {
   const tr = document.createElement("tr");
   tr.innerHTML = `
       <td>${serial + ". " + name}</td>    
-      <td>${area + "cm"}</td>
+      <td>${area + "cm"}<sup>2</sup></td>
       <td>${centimeterToMeterBtn()}</td>
       `;
   areaCalculationContainer.appendChild(tr);
@@ -27,10 +27,9 @@ function calculationDisplay(name, area) {
 //! function for cm to m button function
 function centimeterToMeterBtn() {
   const button = document.createElement("button");
-  button.innerText = "Convert to m";
+  button.innerHTML = `Convert to m<sup>2</sup>`;
   button.classList.add(
-    "bg-blue-500",
-    "hover:bg-blue-700",
+    "btn-info",
     "text-white",
     "font-bold",
     "py-1",
