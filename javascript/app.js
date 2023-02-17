@@ -17,17 +17,26 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   const rectangleWidth = valueOfInput("rectangle-width");
   const rectangleLength = valueOfInput("rectangle-length");
   const area = rectangleWidth * rectangleLength;
-  calculationDisplay(rectangleName, area);
+  validationCheck(rectangleWidth, rectangleLength, rectangleName, area);
 });
 
 // ! triangle event handler
 document.getElementById("triangle-btn").addEventListener("click", function () {
   const triangleName = document.getElementById("triangle-title").innerText;
-  const triangleBase = document.getElementById("triangle-base").value;
-  const triangleHeight = document.getElementById("triangle-height").value;
-  const area = 0.5 * triangleBase * triangleHeight;
-  calculationDisplay(triangleName, area);
+  const base = document.getElementById("triangle-base").value;
+  const height = document.getElementById("triangle-height").value;
+  const area = 0.5 * base * height;
+  validationCheck(base, height, triangleName, area);
 });
+
+// function for validation check
+function validationCheck(value1, value2, geometricName, area) {
+  if (value1 < 0 || value2 < 0 || value1 == "" || value2 == "") {
+    alert("Value should be a positive number.");
+  } else {
+    calculationDisplay(geometricName, area);
+  }
+}
 
 // function for showing calculate data
 function calculationDisplay(name, area) {
@@ -43,7 +52,7 @@ function calculationDisplay(name, area) {
   serial += 1;
 }
 
-//!  cm to m button function
+//! function for cm to m button function
 function centimeterToMeterBtn() {
   const button = document.createElement("button");
   button.innerText = "Convert to m";
