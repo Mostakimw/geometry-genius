@@ -43,8 +43,3 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
 document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "blog.html";
 });
-
-// redirect to homepage
-document.getElementById("home-btn").addEventListener("click", function () {
-  window.history.back();
-});
