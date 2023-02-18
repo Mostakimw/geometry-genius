@@ -11,6 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+<style>
+    .card {
+        transition: 0.9s;
+    }
+</style>
 
 <body>
     <header>
@@ -33,7 +38,8 @@
 
             <div class="md:grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-[70%]">
                 <!-- ! triangle  -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/triangle.png" class="h-40 w-60" alt="triangle" /></figure>
                     <div class="card-body text-center">
                         <h2 id="triangle-title" class="font-bold text-2xl">Triangle</h2>
@@ -50,7 +56,8 @@
                         class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! rectangle  -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/rectangle.png" class="h-40 w-60" alt="Parallelogram" /></figure>
                     <div class="card-body text-center">
                         <h2 id="rectangle-title" class="font-bold text-2xl">Rectangle</h2>
@@ -67,7 +74,8 @@
                         class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Parallelogram  -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/parallelogram.png" class="h-40 w-60" alt="Parallelogram" /></figure>
                     <div class="card-body text-center">
                         <h2 id="parallelogram-title" class="font-bold text-2xl">Parallelogram</h2>
@@ -84,7 +92,8 @@
                         class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Rhombus  -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/rhombus.png" class="h-40 w-60" alt="Rhombus" /></figure>
                     <div class="card-body text-center">
                         <h2 id="rhombus-title" class="font-bold text-2xl">Rhombus</h2>
@@ -101,7 +110,8 @@
                         class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! Pentagon -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/pentagon.png" class="h-40 w-60" alt="Pentagon" /></figure>
                     <div class="card-body text-center">
                         <h2 id="pentagon-title" class="font-bold text-2xl">Pentagon</h2>
@@ -118,7 +128,8 @@
                         class="btn-info rounded-md py-4 text-2xl font-bold text-white">Calculate</button>
                 </div>
                 <!-- ! ellipse  -->
-                <div class="card w-full bg-base-100 border border-lg px-10 py-8">
+                <div onmouseover="randomBgColor(this)" onmouseout="normalBg(this)"
+                    class="card w-full bg-base-100 border border-lg px-10 py-8 mb-4">
                     <figure><img src="./images/ellipse.png" class="h-40 w-60" alt="Ellipse" /></figure>
                     <div class="card-body text-center">
                         <h2 id="ellipse-title" class="font-bold text-2xl">Ellipse</h2>
@@ -138,7 +149,7 @@
 
             <!-- ! area calculation section  -->
             <div class="md:w-[30%] max-sm:mt-6">
-                <div class="bg-base-100 border border-lg md:px-6 py-8 md:h-[50%] max-sm:h-[200px] rounded-lg">
+                <div class="bg-base-100 border border-lg md:px-6 py-8 md:h-[100%] max-sm:h-80 rounded-lg">
                     <h2 class="text-3xl underline font-semibold text-center">Area Calculation</h2>
                     <div class="overflow-x-auto">
                         <table class="table w-full">
@@ -152,6 +163,9 @@
 
         </section>
     </main>
+    <footer class="mt-8 bg-red-200 py-6 px-2 text-center">
+        <p>&copy; by Geometry-Area-Calculation</p>
+    </footer>
 
 
     <!-- ! Javascript linked  -->

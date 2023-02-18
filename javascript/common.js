@@ -77,3 +77,14 @@ function calculateAreaForEllipse(nameId, value1Id, value2Id) {
   const area = (3.14 * parseFloat(value1) * parseFloat(value2)).toFixed(2);
   validationCheck(value1, value2, name, area);
 }
+
+function randomBgColor(div) {
+  var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  div.style.backgroundColor = "#" + randomColor;
+  div.style.color = "white";
+}
+
+function normalBg(div) {
+  div.style.backgroundColor = "";
+  div.style.color = "";
+}

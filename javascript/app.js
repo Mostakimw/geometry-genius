@@ -39,7 +39,12 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   calculateAreaForEllipse("ellipse-title", "ellipse-x-axis", "ellipse-y-axis");
 });
 
+// redirect to blog page
 document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "blog.html";
-  console.log("clicked");
+});
+
+// redirect to homepage
+document.getElementById("home-btn").addEventListener("click", function () {
+  window.history.back();
 });
