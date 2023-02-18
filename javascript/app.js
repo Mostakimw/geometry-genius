@@ -38,3 +38,8 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
 document.getElementById("ellipse-btn").addEventListener("click", function () {
   calculateAreaForEllipse("ellipse-title", "ellipse-x-axis", "ellipse-y-axis");
 });
+
+document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href = "blog.html";
+  console.log("clicked");
+});
