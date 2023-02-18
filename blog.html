@@ -20,7 +20,7 @@
                         Genius</span></a>
             </div>
             <div class="navbar-end">
-                <button class="btn-info text-3xl px-8 py-2 font-bold text-white rounded-md">Home</button>
+                <button id="home-btn" class="btn-info text-3xl px-8 py-2 font-bold text-white rounded-md">Home</button>
             </div>
         </div>
     </header>
@@ -79,13 +79,12 @@
                         <h2 class="text-3xl font-semibold text-red-500">What is callback function? Why we will use it?
                         </h2>
                         <p class="text-2xl">
-                            Event bubble is the concept of DOM(Document Object Model). There are many events in DOM and
-                            html elements receive them. Event bubble one of them.
-                            Event bubble happen when a html element receive an event like click, mouseover, scroll, blur
-                            and many more. And event bubble ups to its parent element until it gets the root element
-                            that is document.
-                            If a button clicked that means an event happens with the button elements. And this event
-                            will go up to its parent element. it will propagate until it find its root element.
+                            When a function takes a function as argument its called callback function. In short, it is a
+                            function that is executed after another function is executed.
+                            We know the javascript asynchronous behavior. When a function or a statement takes more time
+                            then it's go to the next statement without any waiting and execute the next statement. So
+                            that we cannot get the data in order that we want to get.
+                            For solve this problem callback function has been used.
                         </p>
                     </div>
                 </div>

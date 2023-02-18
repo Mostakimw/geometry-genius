@@ -6,8 +6,8 @@ function titleInnerText(id) {
 
 // ! function for taking value from input
 function valueOfInput(id) {
-  const value = document.getElementById(id).value;
-  return value;
+  const valueString = document.getElementById(id).value;
+  return valueString;
 }
 
 let serial = 1;
@@ -52,27 +52,28 @@ function validationCheck(value1, value2, geometricName, area) {
 
 // ! function for calculate triangle, Rhombus, Pentagon area
 function calculateArea(nameId, value1Id, value2Id) {
-  const name = document.getElementById(nameId).innerText;
-  const value1 = document.getElementById(value1Id).value;
-  const value2 = document.getElementById(value2Id).value;
-  const area = 0.5 * value1 * value2;
+  const name = titleInnerText(nameId);
+  const value1 = valueOfInput(value1Id);
+  const value2 = valueOfInput(value2Id);
+  const area = (0.5 * parseFloat(value1) * parseFloat(value2)).toFixed(2);
   validationCheck(value1, value2, name, area);
 }
 
 // ! function for calculate rectangular, Parallelogram area
 function calculateAreaForRecAndPara(nameId, value1Id, value2Id) {
-  const name = document.getElementById(nameId).innerText;
-  const value1 = document.getElementById(value1Id).value;
-  const value2 = document.getElementById(value2Id).value;
-  const area = value1 * value2;
+  const name = titleInnerText(nameId);
+  const value1 = valueOfInput(value1Id);
+  const value2 = valueOfInput(value2Id);
+  const area = (parseFloat(value1) * parseFloat(value2)).toFixed(2);
   validationCheck(value1, value2, name, area);
 }
 
 // ! function for calculate ellipse area
 function calculateAreaForEllipse(nameId, value1Id, value2Id) {
-  const name = document.getElementById(nameId).innerText;
-  const value1 = document.getElementById(value1Id).value;
-  const value2 = document.getElementById(value2Id).value;
-  const area = (3.14 * value1 * value2).toFixed(2);
+  const name = titleInnerText(nameId);
+  const value1 = valueOfInput(value1Id);
+  const value2 = valueOfInput(value2Id);
+  console.log(typeof value2);
+  const area = (3.14 * parseFloat(value1) * parseFloat(value2)).toFixed(2);
   validationCheck(value1, value2, name, area);
 }
